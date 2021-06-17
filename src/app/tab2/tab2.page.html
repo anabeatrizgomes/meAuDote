@@ -1,17 +1,132 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header [translucent]="true" >
+  <ion-toolbar color="red">
     <ion-title>
-      Tab 2
+      DOAÇÕES
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="gray">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+  <ion-content>
+    <ion-list-header>
+      <h2>
+      <ion-label>
+        <ion-text color="dark">
+         Preencha o formulário e seja um doador
+        </ion-text>
+
+
+      </ion-label>
+    </h2>
+    </ion-list-header>
+
+
+<ion-item>
+  <ion-label position="stacked">Nome</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Email</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Telefone</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>Data de nascimento</ion-label>
+  <ion-datetime displayFormat="MM DD YY" placeholder="Select Date"></ion-datetime>
+</ion-item>
+
+
+    <ion-item>
+      <ion-label>Sexo</ion-label>
+      <ion-select multiple="true" [value]="['bird', 'dog']">
+        <ion-select-option value="1">Femenino</ion-select-option>
+        <ion-select-option value="2">Masculino</ion-select-option>
+
+      </ion-select>
+    </ion-item>
+
+    <ion-button color="red" expand="block"> DOAR<ion-icon slot="end" name="heart"></ion-icon></ion-button>
+<ion-grid>
+  <ion-row>
+
+
+    <ion-col size="6">
+      <ion-card>
+
+        <img src="https://t1.uc.ltmcdn.com/pt/images/6/6/4/img_como_fazer_meu_gato_comer_racao_21466_orig.jpg">
+            <ion-item lines="none" class="ion-no-padding">
+              <h2>
+                <ion-label>
+                  R$ 50,00
+                </ion-label>
+              </h2>
+            </ion-item>
+            <div class="p">Doando R$ 50,00 você alimenta um animal de pequeno porte durante um mês!!</div>
+
+
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card>
+
+            <img src="https://2.bp.blogspot.com/-9rtP11hHezc/WRjTnm5rfwI/AAAAAAAAAbs/NqLCcAyVnv49uxU3o53QTTzQYcfTX8xVgCLcB/s1600/como%2Bfazer%2Bo%2Bcachorro%2Bcomer%2Bracao%2B02.png">
+                <ion-item lines="none" class="ion-no-padding">
+                  <h2>
+                    <ion-label>
+                      R$ 100,00
+                    </ion-label>
+                  </h2>
+                </ion-item>
+                <div class="p">Doando R$ 100,00 você alimenta um animal de médio porte durante um mês!!</div>
+
+
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="6">
+              <ion-card>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHMFxle7x6RGXiVq3t3eyAoT3O-zb4ExXrtHCZPFGGJdj30P2nUMbXeUofte1IVb0cCfs&usqp=CAU">
+                    <ion-item lines="none" class="ion-no-padding">
+                      <h2>
+                        <ion-label>
+                          R$ 150,00
+                        </ion-label>
+                      </h2>
+                    </ion-item>
+                    <div class="p">Doando R$ 150,00 você nos ajuda levar um animal ao veterinário!!</div>
+
+
+                  </ion-card>
+                </ion-col>
+
+                <ion-col size="6">
+                  <ion-card>
+
+                    <img src="https://cdn.abcdoabc.com.br/medico-veterinario-freepik_c79b57d6.jpg">
+                        <ion-item lines="none" class="ion-no-padding">
+                          <h2>
+                            <ion-label>
+                              R$ 300,00
+                            </ion-label>
+                          </h2>
+                        </ion-item>
+                        <div class="p">Doando R$ 300,00 você nos ajuda a castrar um animal!!</div>
+
+
+                      </ion-card>
+                    </ion-col>
+
+
+                  </ion-row>
+                </ion-grid>
+
+
+

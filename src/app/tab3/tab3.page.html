@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="red">
     <ion-title>
-      Tab 3
+      DENÚNCIAS
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="gray">
+  <p>De acordo com a lei 9.605/98, artigo 32, é crime praticar maus tratos contra animais domésticos, silvestres... Várias condutas podem caracterizar os crimes, tais como o abandono, ferir, envenenar, manter em locais pequenos sem higiene, entre outros. Hoje a legislação prevê pena de três meses a um ano de detenção para quem prática atos contra animais.</p>
+<div>
+  <ion-text color="red">
+  <p>
+    Não tenha medo, é possível denunciar de maneira anônima nos seguintes telefones ou no espaço abaixo:
+  </p>
+</ion-text>
+<p><b>Polícia Militar:</b> Número <ion-badge color="red">190</ion-badge> </p>
+<p><b>Disque denúncia Animal- São Paulo:</b> No estado de SP existe o disque denúncia, que atende pelo telefone  <ion-badge color="red">0800 600-6428 </ion-badge></p>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+
+</div>
+
+<!-- Input with placeholder -->
+<ion-input placeholder="digite aqui sua denúncia"></ion-input>
+
+    <ion-button color="red"> DENÚNCIAR<ion-icon slot="end" name="call"></ion-icon></ion-button>
+
+
+
+
+
+
+
+
+
+
